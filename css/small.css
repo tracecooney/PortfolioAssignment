@@ -1,0 +1,99 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'inconsolata' monospace;
+    --lightWeight: 300;
+    --heavyWeight: 700;
+    --primaryColor: #567;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: var(--primaryColor);
+}
+
+nav ul {
+    margin: 0%;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav a {
+    padding: .8rem .5rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: var(--heavyWeight);
+}
+
+nav a:hover {
+    background-color: black;
+    color: wheat;
+}
+
+section#about {
+    background-color: bisque;
+    height: 100vh;
+    padding: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#about h1 {
+    font-size: 2.5rem;
+}
+
+section#about h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+section#projects {
+    background-color: rosybrown;
+    min-height: 100vh;
+    padding: 50%;
+}
+
+div.theParent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.theParent a {
+    flex-basis: 100%;
+    padding: 1rem 2vw;
+}
+
+section#projects figure {
+    margin: 0;
+    width: 100%;
+}
+
+section#projects image {
+    width: 100%;
+}
+
+section#contact {
+    background-color: powderblue;
+    height: 100vh;
+}
+
+footer p, footer span {
+    font-size: 2rem;
+    text-align: center;
+    color: purple;
+    padding: 1rem;
+}

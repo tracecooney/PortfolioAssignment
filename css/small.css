@@ -89,6 +89,41 @@ section#projects image {
 section#contact {
     background-color: powderblue;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#contact h2 {
+    color: blue;
+}
+
+section#contact ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+section#contact li {
+    list-style-type: none;
+}
+
+section#contact a {
+    color: palevioletred;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#contact a img {
+    height: 50px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+section#contact a:hover {
+    text-decoration: underline;
+    transform: translateY(4px);
 }
 
 footer p, footer span {
